@@ -6,18 +6,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default anchor behavior
+            event.preventDefault();
             
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
 
-            // Scroll to the target section
+           
             window.scrollTo({
                 top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
                 behavior: 'smooth'
             });
 
-            // Add animation to the target section
             targetSection.style.opacity = '0';
             targetSection.style.transform = 'translateY(20px)';
 
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 targetSection.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
                 targetSection.style.opacity = '1';
                 targetSection.style.transform = 'translateY(0)';
-            }, 100); // Delay to allow the scroll to complete
+            }, 100); 
         });
     });
 
