@@ -23,10 +23,15 @@
     <section id="home">
         <div class="container">
             <h1>Welcome to My Portfolio</h1>
-            <p>Hello! I am Roshan Kuhikar, passionate about web development.</p>
+            <p>Hello! I am Roshan Kuhikar,passionate about web developer.</p>
             <centre><img src="roshan.jpg" alt="Profil Photo" height="200" width="200" class="circular-image" 
-                class="hd-image"></centre>
+                class="hd-image" onclick="openImage()"></centre>
         </div>
+        <!-- Image Modal -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeImage()">&times;</span>
+    <img class="modal-content" id="fullImage">
+</div>
     </section>
     <section id="about">
         <div class="container">
@@ -40,8 +45,8 @@
             <div class="project">
                 <button class="project-btn" data-project="portfolio">Portfolio Website</button>
                 <a href="https://thetechieroshan.github.io/CALCULATOR_2/">
-                <button class="project-btn" data-project="calculator">Calculator</button>
-                </a>
+                <button class="project-btn" data-project="calculator"  >Calculator</button>
+            </a>
             </div>
             <div class="project-details" id="portfolio">
                 <div class="overlay"></div>
@@ -81,7 +86,7 @@
     <section id="testimonals">
         <div class="container">
             <h2>Testimonals</h2>
-            <p>“Roshan is an exceptional web developer with a keen eye for detail. His portfolio is a testament to his skills and dedication.” - [Dishan Kewat]</p>
+            <p>“Roshan is an exceptional web developer with a keen eye for detail. His portfolio is a testament to his skills and dedication.” - [Dishant Kewat]</p>
             <p>“Highly recommend Roshan for any web development projects. His work is both innovative and effective.” - [Diksha Bisen]</p>
         </div>
     </section>
